@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Montserrat:300,400,700,900|Great+Vibes');
+
+$ff-s: 'Montserrat', serif;
+$ff-ss: 'Hammersmith One', sans-serif;
+$ff-c: 'Great Vibes', cursive;
+
+$fw-n: 300;
+$fw-b: 900;
+
+@mixin serif($fs, $ls: .15em, $color: $white, $tt: uppercase, $lh: 1) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  text-transform: $tt;
+  line-height: $lh;
+  font-family: $ff-ss;
+  font-weight: $fw-n;
+}

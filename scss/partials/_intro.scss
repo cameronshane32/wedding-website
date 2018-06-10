@@ -1,0 +1,69 @@
+.intro {
+  background-image: url(../img/header-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $ff-ss;
+  font-size: 1em;
+  @include mq {
+    font-size: 1.5em;
+  }
+
+  .bride-name, .groom-name {
+    font-size: 2rem;
+    font-family: $ff-s;
+    display: block;
+    padding: .5em;
+    @include mq {
+      font-size: 3rem;
+    }
+  }
+
+  .name-link {
+    overflow: hidden;
+    text-align: center;
+    color: $pink;
+
+    &:before,
+    &:after {
+      background-color: $white;
+      content: "";
+      display: inline-block;
+      height: 5px;
+      position: relative;
+      vertical-align: middle;
+      width: 10%;
+    }
+
+    &:before {
+      right: 0.5em;
+      margin-left: -10%;
+    }
+
+    &:after {
+      left: 0.5em;
+      margin-right: -10%;
+    }
+  }
+
+  h2 {
+    padding: .5em;
+    font-size: 1.1em;
+  }
+
+
+  hr {
+    display: block;
+    border: .15em solid $pink;
+    width: 4rem;
+  }
+}

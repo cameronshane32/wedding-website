@@ -1,0 +1,99 @@
+
+
+.rsvp {
+  @include container;
+  padding: 1em 0;
+  background-color: $white;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: $dark-gray;
+    font-size: 6em;
+    font-family: $ff-s;
+    font-weight: $fw-n;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-s;
+
+  @supports (display: grid) {
+    @include mq {
+      display: grid;
+      grid-column: 1fr 1fr;
+      grid-column-gap: 1em;
+      grid-template-areas:
+      "name    email"
+      "  yes      no"
+      "message message"
+      "    .   button";
+
+      .name {
+        grid-area: name;
+      }
+
+      .email {
+        grid-area: email;
+      }
+
+      .yes {
+        grid-area: yes;
+      }
+
+      .no {
+        grid-area: no;
+      }
+
+      .message {
+        grid-area: message;
+        textarea {
+          height: 10em;
+        }
+      }
+
+      .button {
+        grid-area: button;
+        cursor: pointer;
+
+      }
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: $dark-gray;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: .25em;
+  width: 100%;
+  min-width: 15em;
+  background: lighten($dark-gray, 65%);
+  border: 1px solid lighten($dark-gray, 55%);
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  min-width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: $pink;
+  border: none;
+  @include serif($fs: 2rem, $color: $white);
+  padding: .5em 1.5em;
+
+  &:hover {
+    background: darken($pink, 10%);
+  }
+
+}
