@@ -36,7 +36,7 @@ app.post('/rsvp', function (req, res) {
       res.render('rsvp-failure');
     }
     else {
-      res.render('rsvp-success')
+      res.redirect('/')
     }
   });
 });
