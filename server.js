@@ -1,6 +1,7 @@
 // server
 const express = require('express');
 const app = express();
+const http = require('http').Server()
 const path = require('path');
 require('dotenv').config()
 const nodemailer = require('nodemailer');
@@ -21,7 +22,7 @@ app.post('/rsvp', function (req, res) {
     secure: true,
     auth: {
       user: 'carlyandshanewedding@gmail.com',
-      pass: 'carlylovessooki'
+      pass: 'carlylovessooki!'
     }
   });
   mailOpts = {
