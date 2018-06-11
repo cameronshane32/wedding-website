@@ -36,9 +36,13 @@ app.post('/rsvp', function (req, res) {
       res.render('rsvp-failure');
     }
     else {
-      res.redirect('/')
+      res.redirect('/sucess')
     }
   });
+});
+
+app.get('/sucess', function (req, res) {
+  res.sendFile(path.join(__dirname + '/sucess.html'));
 });
 
 app.use("/css", express.static(__dirname + '/css'));
