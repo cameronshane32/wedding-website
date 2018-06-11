@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-with-css-grid",
+  "name": "wedding-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/kevin-powell/portfolio-with-css-grid.git"
   },
-  "author": "Kevin Powell",
+  "author": "Shane Cameron",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevin-powell/portfolio-with-css-grid/issues"
+    "url": "https://github.com/cameronshane32/wedding-website/issues"
   },
-  "homepage": "https://github.com/kevin-powell/portfolio-with-css-grid#readme",
+  "homepage": "https://github.com/cameronshane32/wedding-website#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.6"
   }
 }
