@@ -189,19 +189,20 @@
 
     <h1>RSVP</h1>
     <form action="/rsvp" id="rsvp-form" method="post" role="form">
-      <label for="name">Name &#42;
-        <input id="name" name="name" type="text" placeholder="Your name" required="required">
-      </label>
-      <label for="email">Email &#42;
-        <input id="email" name="email" type="text" placeholder="Your email" required="required">
-      </label>
-      <label for="message">Message &#42;
-        <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
-      </label>
-      <label for="attend">Will you be attending:
-          <input type="text" id="attend" class="attend" required="required">
-      </label>
+        <label class="name">Name:
+          <input type="text" name="name" id="name" required="required">
+        </label>
 
+        <label class="email">Email:
+          <input type="email" id="email" name="email" required="required">
+        </label>
+        <label class="attend">Will you be attending:
+          <input type="text" id="attend" name="attend" required="required">
+        </label>
+
+        <label class="message">Message:
+          <textarea name="message" id="message"></textarea>
+        </label>
 
         <input class="button form-button" type="submit" value="SEND">
     </form>

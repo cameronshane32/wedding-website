@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const dotenv = require('dotenv').config()
+require('dotenv').config()
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -12,7 +12,6 @@ app.set('port', process.env.PORT || 5000);
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
-
 // POST route from RSVP form
 app.post('/rsvp', function (req, res) {
   let mailOpts, smtpTrans;
@@ -21,15 +20,15 @@ app.post('/rsvp', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: GMAIL_USER,
-      pass: GMAIL_PASS
+      user: 'carlyandshanewedding@gmail.com',
+      pass: 'carlylovessooki'
     }
   });
   mailOpts = {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-    to: GMAIL_USER,
+    to: 'carlyandshanewedding@gmail.com',
     subject: 'New message from RSVP form at carlyandshane.info',
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.attend} ${req.body.message}`
+    text: `${req.body.name} (${req.body.email}) will be attending: ${req.body.attend}` + `, message: ${req.body.message}`
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
     if (error) {
