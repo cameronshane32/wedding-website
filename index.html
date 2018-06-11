@@ -189,27 +189,24 @@
 
     <h1>RSVP</h1>
     <form action="/rsvp" id="rsvp-form" method="post" role="form">
-      <label class="name">Name:
-        <input type="text" id="name" required="required">
-      </label>
+      <fieldset>
+        <label class="name">Name:
+          <input type="text" id="name" required="required">
+        </label>
 
-      <label class="email">Email:
-        <input type="email" required="required">
-      </label>
-      <label for="attend">
-        <input id="attend" class="yes button" type="radio" name="attending" value="yes" required="required">
-        I'm Going
-      </label>
-      <label for="attend">
-        <input id="attend" class="no button" type="radio" name="attending" value="no" required="required">
-        Not Going
-      </label>
+        <label class="email">Email:
+          <input type="email" required="required">
+        </label>
+        <label for="attend">Will you be attending:
+          <input type="text" id="attend" class="attend" required="required">
+        </label>
 
-      <label message="message" class="message">Message:
-        <textarea name="" id="message"></textarea>
-      </label>
+        <label message="message" class="message">Message:
+          <textarea name="" id="message"></textarea>
+        </label>
 
-      <input class="button form-button" type="submit" value="SEND">
+        <input class="button form-button" type="submit" value="SEND">
+      </fieldset>
     </form>
   </section>
 

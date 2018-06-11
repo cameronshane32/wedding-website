@@ -27,7 +27,7 @@ form {
       grid-column-gap: 1em;
       grid-template-areas:
       "name    email"
-      "  yes      no"
+      "attend   attend"
       "message message"
       "    .   button";
 
@@ -39,12 +39,8 @@ form {
         grid-area: email;
       }
 
-      .yes {
-        grid-area: yes;
-      }
-
-      .no {
-        grid-area: no;
+      .attend {
+        grid-area: attend;
       }
 
       .message {
