@@ -1,0 +1,18 @@
+footer {
+  background: darken($pink, 40%);
+  padding: 1em 0;
+  text-align: center;
+  color: $white;
+  font-family: $ff-s;
+}
+
+.copyright {
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: rgba($white, .15);
+    margin: 1em auto;
+    width: 25%;
+  }
+}

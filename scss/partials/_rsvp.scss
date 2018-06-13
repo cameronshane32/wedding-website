@@ -1,16 +1,23 @@
-
+.rsvp-background {
+  background-image: url(../img/rsvp-bg.jpg);
+  background-size: cover;
+}
 
 .rsvp {
+
   @include container;
-  padding: 1em 0;
+  padding: 1em 1em;
   background-color: $white;
 
   h1 {
     width: 100%;
     text-align: center;
-    color: $dark-gray;
-    font-size: 6em;
-    font-family: $ff-s;
+    color: $dark-blue;
+    font-size: 4em;
+    @include mq {
+      font-size: 6em;
+    }
+    font-family: $ff-c;
     font-weight: $fw-n;
   }
 }
@@ -41,6 +48,9 @@ form {
 
       .attend {
         grid-area: attend;
+        ::placeholder {
+          color: darken($dark-blue, 70%);
+        }
       }
 
       .message {
@@ -62,7 +72,7 @@ form {
 label {
   display: block;
   margin-top: 1em;
-  color: $dark-gray;
+  color: $dark-blue;
 }
 
 input,
@@ -75,6 +85,8 @@ textarea {
   background: lighten($dark-gray, 65%);
   border: 1px solid lighten($dark-gray, 55%);
   font-size: 1.2rem;
+
+
 }
 
 .button {
@@ -85,6 +97,8 @@ textarea {
   margin-left: auto;
   background: $pink;
   border: none;
+  border-radius: 4px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
   @include serif($fs: 2rem, $color: $white);
   padding: .5em 1.5em;
 

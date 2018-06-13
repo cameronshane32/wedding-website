@@ -3,4 +3,10 @@
 @import 'registry';
 @import 'photos';
 @import 'filler';
-@import 'rsvp-location';
+@import 'rsvp';
+@import 'directions';
+@import 'footer';
+
+body {
+  background-color: $white;
+}

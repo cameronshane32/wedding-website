@@ -1,0 +1,52 @@
+#map {
+  height: 350px;
+  width: 100%;
+}
+
+.directions {
+  margin: 1em;
+
+}
+@include mq {
+
+  .directions {
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+  }
+  .map {
+    width: 100%;
+    margin-left: 4em;
+    margin-top: 2em;
+    font-family: $ff-s;
+    font-weight: $fw-n;
+    font-size: 1.2em;
+    h2 {
+      font-weight: $fw-n;
+      font-size: 2em;
+    }
+  }
+  .details {
+    height: 100vh;
+    width: 100%;
+    margin-left: 4em;
+    text-align: center;
+    h2 {
+      font-family: $ff-c;
+      font-size: 4em;
+    }
+    h3 {
+      font-family: $ff-ss;
+      font-weight: $fw-b;
+      font-size: 1.7em
+    }
+    p {
+      font-family: $ff-s;
+      font-size: 1.2em;
+
+      .capital {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -671,19 +671,26 @@ template {
     .filler-background {
       height: 60vh; } }
 
+.rsvp-background {
+  background-image: url(../img/rsvp-bg.jpg);
+  background-size: cover; }
+
 .rsvp {
   width: 90%;
   margin: 0 auto;
   max-width: 50em;
-  padding: 1em 0;
+  padding: 1em 1em;
   background-color: #fffff0; }
   .rsvp h1 {
     width: 100%;
     text-align: center;
-    color: #3b3b3b;
-    font-size: 6em;
-    font-family: "Montserrat", serif;
+    color: #000040;
+    font-size: 4em;
+    font-family: "Great Vibes", cursive;
     font-weight: 300; }
+    @media (min-width: 50em) {
+      .rsvp h1 {
+        font-size: 6em; } }
 
 form {
   display: flex;
@@ -695,15 +702,15 @@ form {
         display: grid;
         grid-column: 1fr 1fr;
         grid-column-gap: 1em;
-        grid-template-areas: "name    email" "  yes      no" "message message" "    .   button"; }
+        grid-template-areas: "name    email" "attend   attend" "message message" "    .   button"; }
         form .name {
           grid-area: name; }
         form .email {
           grid-area: email; }
-        form .yes {
-          grid-area: yes; }
-        form .no {
-          grid-area: no; }
+        form .attend {
+          grid-area: attend; }
+          form .attend ::placeholder {
+            color: black; }
         form .message {
           grid-area: message; }
           form .message textarea {
@@ -715,7 +722,7 @@ form {
 label {
   display: block;
   margin-top: 1em;
-  color: #3b3b3b; }
+  color: #000040; }
 
 input,
 textarea {
@@ -736,6 +743,8 @@ textarea {
   margin-left: auto;
   background: #FF87AB;
   border: none;
+  border-radius: 4px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
   font-size: 2rem;
   letter-spacing: 0.15em;
   color: #fffff0;
@@ -746,3 +755,61 @@ textarea {
   padding: .5em 1.5em; }
   .button:hover {
     background: #ff5487; }
+
+#map {
+  height: 350px;
+  width: 100%; }
+
+.directions {
+  margin: 1em; }
+
+@media (min-width: 50em) {
+  .directions {
+    display: flex;
+    flex-direction: row;
+    height: 750px; }
+  .map {
+    width: 100%;
+    margin-left: 4em;
+    margin-top: 2em;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 1.2em; }
+    .map h2 {
+      font-weight: 300;
+      font-size: 2em; }
+  .details {
+    height: 100vh;
+    width: 100%;
+    margin-left: 4em;
+    text-align: center; }
+    .details h2 {
+      font-family: "Great Vibes", cursive;
+      font-size: 4em; }
+    .details h3 {
+      font-family: "Hammersmith One", sans-serif;
+      font-weight: 900;
+      font-size: 1.7em; }
+    .details p {
+      font-family: "Montserrat", serif;
+      font-size: 1.2em; }
+      .details p .capital {
+        text-transform: uppercase; } }
+
+footer {
+  background: #ba0038;
+  padding: 1em 0;
+  text-align: center;
+  color: #fffff0;
+  font-family: "Montserrat", serif; }
+
+.copyright::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(255, 255, 240, 0.15);
+  margin: 1em auto;
+  width: 25%; }
+
+body {
+  background-color: #fffff0; }

@@ -1,0 +1,12 @@
+body {
+  background-color: #333;
+  font-size: 30px;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FFB6C1;
+}
