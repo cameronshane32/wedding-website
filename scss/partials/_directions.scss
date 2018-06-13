@@ -1,19 +1,46 @@
 #map {
   height: 350px;
   width: 100%;
+  @include mq {
+    margin-top: 5em;
+  }
+
+}
+
+.details {
+  .small-cursive {
+    font-family: $ff-c;
+    font-size: 2.3em;
+    padding-top: 20px;
+  }
 }
 
 .directions {
-  margin: 1em;
+  height: 1300px;
+  color: $white;
+  text-align: center;
+  padding: 1em 0;
+  background-attachment: fixed;
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
 
+  hr {
+    margin-top: 3em;
+    width: 40%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+  }
 }
 @include mq {
-
   .directions {
     display: flex;
     flex-direction: row;
-    height: 750px;
+    height: 800px;
   }
+
   .map {
     width: 100%;
     margin-left: 4em;
@@ -21,32 +48,43 @@
     font-family: $ff-s;
     font-weight: $fw-n;
     font-size: 1.2em;
+
     h2 {
       font-weight: $fw-n;
       font-size: 2em;
     }
   }
-  .details {
-    height: 100vh;
-    width: 100%;
+}
+
+.details {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  @include mq {
     margin-left: 4em;
-    text-align: center;
-    h2 {
-      font-family: $ff-c;
+  }
+
+  h2 {
+    font-family: $ff-c;
+    font-size: 3em;
+    @include mq {
       font-size: 4em;
     }
-    h3 {
-      font-family: $ff-ss;
-      font-weight: $fw-b;
-      font-size: 1.7em
-    }
-    p {
-      font-family: $ff-s;
-      font-size: 1.2em;
 
-      .capital {
-        text-transform: uppercase;
-      }
+  }
+
+  h3 {
+    font-family: $ff-ss;
+    font-weight: $fw-b;
+    font-size: 1.7em;
+  }
+
+  p {
+    font-family: $ff-s;
+    font-size: 1.2em;
+
+    .capital {
+      text-transform: uppercase;
     }
   }
 }
