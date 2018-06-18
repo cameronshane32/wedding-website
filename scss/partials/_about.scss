@@ -7,7 +7,13 @@
     margin-left: 25%;
   }
 }
-
+.about-us {
+  font-family: $ff-c;
+  text-align: center;
+  padding-top: .2em;
+  font-size: 1.6em;
+  color: $dark-blue;
+}
 #about {
   background-image: url(../img/about-us-background.jpg);
   background-size: cover;
@@ -39,6 +45,8 @@
   width: 100vw;
   height: 0;
   transition: 0.6s ease;
+  font-size: .8em;
+  font-family: $ff-s;
 
   @include mq {
     width: 100%;

@@ -42,6 +42,41 @@ hr {
   overflow: visible;
   /* 2 */ }
 
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 /* Text-level semantics
    ========================================================================== */
 /**
@@ -325,6 +360,13 @@ template {
     .container {
       margin-left: 25%; } }
 
+.about-us {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  padding-top: .2em;
+  font-size: 1.6em;
+  color: #000040; }
+
 #about {
   background-image: url(../img/about-us-background.jpg);
   background-size: cover;
@@ -349,7 +391,9 @@ template {
   overflow: hidden;
   width: 100vw;
   height: 0;
-  transition: 0.6s ease; }
+  transition: 0.6s ease;
+  font-size: .8em;
+  font-family: "Montserrat", serif; }
   @media (min-width: 50em) {
     .overlay {
       width: 100%; } }
@@ -779,7 +823,7 @@ textarea {
   padding-top: 20px; }
 
 .directions {
-  height: 1300px;
+  height: 280vh;
   color: #fffff0;
   text-align: center;
   padding: 1em 0;
