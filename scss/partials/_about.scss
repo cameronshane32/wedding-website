@@ -7,25 +7,12 @@
     margin-left: 25%;
   }
 }
-@include mq {
-  .about-us {
-    h1 {
-      display: none;
-    }
-  }
-}
-.about-us {
-  font-family: $ff-c;
-  text-align: center;
-  padding-top: .2em;
-  font-size: 1.6em;
-  color: $dark-blue;
-}
+
 #about {
   background-image: url(../img/about-us-background.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 75vh;
 
   img {
     display: block;

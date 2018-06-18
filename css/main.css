@@ -304,7 +304,7 @@ template {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -360,22 +360,11 @@ template {
     .container {
       margin-left: 25%; } }
 
-@media (min-width: 50em) {
-  .about-us h1 {
-    display: none; } }
-
-.about-us {
-  font-family: "Great Vibes", cursive;
-  text-align: center;
-  padding-top: .2em;
-  font-size: 1.6em;
-  color: #000040; }
-
 #about {
   background-image: url(../img/about-us-background.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh; }
+  height: 75vh; }
   #about img {
     display: block;
     margin-left: auto;
