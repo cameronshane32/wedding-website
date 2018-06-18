@@ -360,6 +360,10 @@ template {
     .container {
       margin-left: 25%; } }
 
+@media (min-width: 50em) {
+  .about-us h1 {
+    display: none; } }
+
 .about-us {
   font-family: "Great Vibes", cursive;
   text-align: center;
@@ -371,7 +375,7 @@ template {
   background-image: url(../img/about-us-background.jpg);
   background-size: cover;
   background-position: center;
-  height: 75vh; }
+  height: 100vh; }
   #about img {
     display: block;
     margin-left: auto;
