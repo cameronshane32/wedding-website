@@ -387,20 +387,31 @@ template {
         max-width: 100%; } }
 
 .overlay {
+  bottom: 0;
+  height: 100%;
   position: absolute;
-  bottom: 100%;
   left: 0;
   right: 0;
   background-color: rgba(101, 69, 151, 0.5);
   overflow: hidden;
   width: 100vw;
-  height: 0;
-  transition: 0.6s ease;
   font-size: .8em;
   font-family: "Montserrat", serif; }
-  @media (min-width: 50em) {
-    .overlay {
-      width: 100%; } }
+
+@media (min-width: 50em) {
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(101, 69, 151, 0.5);
+    overflow: hidden;
+    width: 100vw;
+    height: 0;
+    transition: 0.6s ease;
+    font-size: .8em;
+    font-family: "Montserrat", serif;
+    width: 100%; } }
 
 .container:hover .overlay {
   bottom: 0;

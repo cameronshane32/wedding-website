@@ -40,22 +40,34 @@
   }
 }
 
-
-
 .overlay {
+  bottom: 0;
+  height: 100%;
   position: absolute;
-  bottom: 100%;
   left: 0;
   right: 0;
   background-color: rgba($purple, .5);
   overflow: hidden;
   width: 100vw;
-  height: 0;
-  transition: 0.6s ease;
   font-size: .8em;
   font-family: $ff-s;
+}
 
-  @include mq {
+@include mq {
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba($purple, .5);
+    overflow: hidden;
+    width: 100vw;
+    height: 0;
+    transition: 0.6s ease;
+    font-size: .8em;
+    font-family: $ff-s;
+
+
     width: 100%;
   }
 }
