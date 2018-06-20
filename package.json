@@ -1,8 +1,4 @@
 {
-  "start": "node server.js",
-  "start:dev": "node server.js 5000"
-},
-{
   "name": "wedding-website",
   "version": "1.0.0",
   "description": "",
@@ -34,5 +30,7 @@
   },
   "engines": {
     "node": "9.2.0"
-  }
+  },
+    "start": "node server.js",
+    "start:dev": "node server.js 5000"
 }
