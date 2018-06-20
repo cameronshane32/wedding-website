@@ -18,11 +18,12 @@
   "homepage": "https://github.com/cameronshane32/wedding-website#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "build": "^0.1.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "nodemailer": "^4.6.6"
