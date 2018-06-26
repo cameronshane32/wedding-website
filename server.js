@@ -1,4 +1,5 @@
 // server
+var sslRedirect = require('heroku-ssl-redirect');
 const express = require('express');
 const app = express();
 const http = require('http').Server()
@@ -6,6 +7,7 @@ const path = require('path');
 require('dotenv').config()
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+app.use(sslRedirect());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('port', process.env.PORT || 5000);
 
