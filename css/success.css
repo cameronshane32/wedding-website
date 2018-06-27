@@ -12,6 +12,7 @@ body {
 a {
   text-decoration: none;
   width: 256px;
+  height: 64px;
 }
 path {
   fill: transparent;
