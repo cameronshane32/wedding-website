@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 const http = require('http').Server()
 const path = require('path');
-require('dotenv').config()
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 app.use(sslRedirect());
@@ -23,8 +22,8 @@ app.post('/rsvp', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: 'carlyandshanewedding@gmail.com',
-      pass: 'carlylovessooki!'
+      user: GMAIL_USER,
+      pass: GMAIL_PASS
     }
   });
   mailOpts = {
