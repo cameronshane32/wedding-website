@@ -22,8 +22,8 @@ app.post('/rsvp', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: GMAIL_USER,
-      pass: GMAIL_PASS
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
     }
   });
   mailOpts = {
