@@ -491,8 +491,8 @@ template {
   width: 75%;
   margin: 0 auto;
   padding-bottom: 2em;
-  font-family: "Hammersmith One", sans-serif;
-  /* Media queries - Responsive timeline on screens less than 600px wide */ }
+  color: #fffff0 !important;
+  font-family: "Hammersmith One", sans-serif; }
 
 @keyframes modalIn {
   0% {
@@ -505,91 +505,11 @@ template {
     opacity: 1; }
   100% {
     opacity: 0; } }
-  .modal-content .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto; }
-  .modal-content .timeline::after {
-    content: '';
-    position: absolute;
-    width: 0.4em;
-    background-color: #fffff0;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px; }
-  .modal-content .time-container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%; }
-  .modal-content .time-container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: #fffff0;
-    border: 4px solid #900020;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1; }
-  .modal-content .left {
-    left: -8.5%; }
-  .modal-content .right {
-    left: 50%; }
-  .modal-content .left::before {
-    content: '';
-    height: 0;
-    position: absolute;
-    top: 1.5em;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #fffff0;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #fffff0; }
-  .modal-content .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent; }
-  .modal-content .right::after {
-    left: -16px; }
   .modal-content .content {
     padding: 20px 30px;
     background-color: #fffff0;
     position: relative;
     border-radius: 6px; }
-  @media screen and (max-width: 600px) {
-    .modal-content {
-      /* Place the timelime to the left */
-      /* Full-width containers */
-      /* Make sure that all arrows are pointing leftwards */
-      /* Make sure all circles are at the same spot */
-      /* Make all right containers behave like the left ones */ }
-      .modal-content .timeline::after {
-        left: 15px; }
-      .modal-content .time-container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px; }
-      .modal-content .time-container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent; }
-      .modal-content .left::after,
-      .modal-content .right::after {
-        left: 15px; }
-      .modal-content .right {
-        left: -8.5%; } }
 
 .registry {
   height: 80vh; }
