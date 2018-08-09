@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  flex-direction: row;
+  justify-content: center;
+  background: #F0F0D8;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: -1px 0 black, 0 1px #212121, 1px 0 black, 0 -1px black;
+  background-image: url(../img/success-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+html h1, body h1 {
+  margin-top: 10rem;
+  text-align: center;
+  color: #E8E8E8;
+  font-size: 3rem;
+}
+html section, body section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 3rem;
+}
+html section a, body section a {
+  height: 2.5em;
+  width: 3.5em;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  transition: all .5s ease;
+  color: #E8E8E8;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+  /*
+  Above is shorthand for:
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  */
+}
+html section a:hover, body section a:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+html section a.lined.thin, body section a.lined.thin {
+  border: solid 2px #E8E8E8;
+  text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px #212121, 1px 0 black, 0 -1px black;
+}
+
+
+@media (max-width: 620px) {
+  body h1 {
+    margin-top: 2rem;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  body section button {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+}
